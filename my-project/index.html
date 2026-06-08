@@ -2,12 +2,158 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>my-project</title>
+    <meta name="description" content="An ultra-premium personal portfolio for Anujith S Nayak — futuristic, cinematic, and built with HTML, CSS, and JavaScript." />
+    <meta name="theme-color" content="#050816" />
+    <title>Anujith S Nayak | Future-Ready Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <canvas id="particle-canvas"></canvas>
+    <div class="cursor"></div>
+    <div class="cursor-trail"></div>
+    <div class="progress-bar"></div>
+
+    <nav class="navbar">
+      <a class="brand" href="#home">ANUJITH</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a class="button-small" href="resume.txt" download>Resume</a>
+      </div>
+    </nav>
+
+    <main>
+      <section id="home" class="hero reveal visible">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <div class="avatar-wrap">
+              <img class="pfp" src="/IMG_20260518_160148.jpg" alt="Anujith S Nayak profile" />
+              <span class="avatar-chip">Available for Opportunities</span>
+            </div>
+            <p class="eyebrow">Future Software Engineer</p>
+            <h1>ANUJITH S NAYAK</h1>
+            <p class="subtitle">Computer Science Engineer • AI Enthusiast • Full Stack Developer</p>
+            <p class="typewriter" aria-live="polite"></p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">Explore Projects</a>
+              <a class="btn btn-secondary" href="#contact">Contact Me</a>
+              <a class="btn btn-secondary" href="resume.txt" download>Download Resume</a>
+            </div>
+            <div class="orbit-icons">
+              <span>Python</span><span>Java</span><span>Spring Boot</span><span>Git</span><span>SQL</span><span>Linux</span><span>HTML</span><span>CSS</span>
+            </div>
+          </div>
+
+          <div class="hero-card-wrap reveal">
+            <article class="holo-card">
+              <div class="holo-top"><strong>Developer Console</strong><span class="dot"></span></div>
+              <div class="holo-grid">
+                <div class="metric"><strong>CGPA 7.92</strong><span>Academic excellence with a practical focus on building impactful tech.</span></div>
+                <div class="metric"><strong>B.Tech CSE</strong><span>NMAM Institute of Technology</span></div>
+                <div class="metric"><strong>Available for Opportunities</strong><span>Open to internships, projects, and engineering roles.</span></div>
+              </div>
+              <span class="badge">⚡ Future-ready • AI • Software Engineering</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="reveal">
+        <p class="eyebrow">About</p>
+        <h2>Crafting intelligent systems with curiosity, design, and impact.</h2>
+        <p>Computer Science and Engineering student eager to apply technical and analytical skills in the IT industry. Passionate about emerging technologies, quick to adapt in dynamic environments, and motivated by building products that matter.</p>
+        <div class="stats-grid" style="margin-top:18px;">
+          <article class="stat-card"><h3>7.92 CGPA</h3><p>Strong academic foundation with hands-on technical learning.</p></article>
+          <article class="stat-card"><h3>4+ Projects</h3><p>AI, ML, web, and full-stack systems built with real-world value.</p></article>
+          <article class="stat-card"><h3>5 Languages</h3><p>English, Kannada, Hindi, Tulu, Konkani.</p></article>
+          <article class="stat-card"><h3>2023–Present</h3><p>Continuous engineering journey with innovation at its core.</p></article>
+        </div>
+      </section>
+
+      <section id="education" class="reveal">
+        <p class="eyebrow">Education</p>
+        <h2>Milestones that shaped the engineer behind the vision.</h2>
+        <div class="timeline-wrap">
+          <div class="timeline-line"></div>
+          <article class="timeline-item"><div class="timeline-card"><h3>NMAM Institute of Technology</h3><p>B.Tech CSE • CGPA: 7.92 • 2023–Present</p></div></article>
+          <article class="timeline-item"><div class="timeline-card"><h3>PRN Amratha Bharathi PU College</h3><p>PCMB • 89.87% • 2021–2023</p></div></article>
+          <article class="timeline-item"><div class="timeline-card"><h3>Amratha Bharathi Vidyalaya</h3><p>SSLC • 87.4% • 2020–2021</p></div></article>
+        </div>
+      </section>
+
+      <section id="skills" class="reveal">
+        <p class="eyebrow">Skills</p>
+        <h2>Interactive skill universe with a glowing engineering core.</h2>
+        <div class="skills-grid">
+          <article class="skill-group"><h3>Programming</h3><div class="skill-list"><span class="skill-chip">Python</span><span class="skill-chip">Java</span><span class="skill-chip">C</span><span class="skill-chip">SQL</span></div></article>
+          <article class="skill-group"><h3>Web</h3><div class="skill-list"><span class="skill-chip">HTML</span><span class="skill-chip">CSS</span></div></article>
+          <article class="skill-group"><h3>Frameworks</h3><div class="skill-list"><span class="skill-chip">Spring Boot</span></div></article>
+          <article class="skill-group"><h3>Tools</h3><div class="skill-list"><span class="skill-chip">Git</span><span class="skill-chip">VS Code</span><span class="skill-chip">Linux</span><span class="skill-chip">DBMS</span><span class="skill-chip">MS Office</span></div></article>
+          <article class="skill-group"><h3>Soft Skills</h3><div class="skill-list"><span class="skill-chip">Communication</span><span class="skill-chip">Teamwork</span><span class="skill-chip">Creativity</span><span class="skill-chip">Analytical Thinking</span></div></article>
+        </div>
+      </section>
+
+      <section id="projects" class="reveal">
+        <p class="eyebrow">Projects</p>
+        <h2>Premium product-style launches built to impress.</h2>
+        <div class="projects-grid">
+          <article class="project-card"><div class="project-visual"></div><h3>E-Sports Prediction System</h3><p>Machine learning model combining Random Forest, Logistic Regression, AdaBoost, and KNN to predict esports match outcomes and player performance.</p><div class="tech-tags"><span>Machine Learning</span><span>Random Forest</span><span>KNN</span><span>Logistic Regression</span></div></article>
+          <article class="project-card"><div class="project-visual"></div><h3>AI Guitar Chord Detector</h3><p>Real-time chord recognition using MediaPipe, OpenCV, and Python-based computer vision to detect hand positions and classify chords live.</p><div class="tech-tags"><span>Python</span><span>MediaPipe</span><span>OpenCV</span><span>KNN</span></div></article>
+          <article class="project-card"><div class="project-visual"></div><h3>Pharmacy Management System</h3><p>Spring Boot + Thymeleaf + MySQL solution for inventory, prescriptions, billing, and sales operations with authentication and dashboards.</p><div class="tech-tags"><span>Spring Boot</span><span>MySQL</span><span>Thymeleaf</span></div></article>
+          <article class="project-card"><div class="project-visual"></div><h3>Resume Builder</h3><p>Dynamic resume builder with live preview, modern layout controls, and PDF export-ready functionality powered by HTML, CSS, and JavaScript.</p><div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></article>
+        </div>
+      </section>
+
+      <section id="languages" class="reveal">
+        <p class="eyebrow">Languages</p>
+        <h2>Communication is part of the product experience.</h2>
+        <div class="bubble-grid">
+          <span class="bubble">English</span><span class="bubble">Kannada</span><span class="bubble">Hindi</span><span class="bubble">Tulu</span><span class="bubble">Konkani</span>
+        </div>
+      </section>
+
+      <section id="interests" class="reveal">
+        <p class="eyebrow">Interests</p>
+        <h2>Beyond code, the mind stays curious and creative.</h2>
+        <div class="interest-grid">
+          <article class="interest-card"><div class="icon-box">🚲</div><h3>Cycling</h3><p>Energy, balance, and a calm rhythm that keeps the mind sharp.</p></article>
+          <article class="interest-card"><div class="icon-box">🏔️</div><h3>Trekking</h3><p>Exploration and resilience through every climb and every view.</p></article>
+          <article class="interest-card"><div class="icon-box">🎸</div><h3>Playing Musical Instruments</h3><p>Creative expression and discipline in every note and pattern.</p></article>
+          <article class="interest-card"><div class="icon-box">📚</div><h3>Reading Books</h3><p>Continuous learning, imagination, and deeper perspectives on life.</p></article>
+        </div>
+      </section>
+
+      <section id="contact" class="reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s build something extraordinary together.</h2>
+        <div class="contact-grid">
+          <article class="contact-card">
+            <div class="contact-list">
+              <div class="contact-item"><span class="contact-label">Email</span><strong>nayakanujith27@gmail.com</strong><button class="copy-btn" data-copy="nayakanujith27@gmail.com">Copy</button></div>
+              <div class="contact-item"><span class="contact-label">Phone</span><strong>9606165951</strong><button class="copy-btn" data-copy="9606165951">Copy</button></div>
+              <div class="contact-item"><span class="contact-label">Location</span><strong>Karkala</strong><button class="copy-btn" data-copy="Karkala">Copy</button></div>
+            </div>
+          </article>
+          <article class="contact-card">
+            <p>Connect with me on the platforms below for opportunities, collaborations, and technical discussions.</p>
+            <div class="social-row">
+              <a class="social-chip" href="https://www.linkedin.com/in/anujith-s-nayak-81b28528b/" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a class="social-chip" href="https://github.com/anujith-nayak" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="social-chip" href="mailto:nayakanujith27@gmail.com">Email</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/script.js"></script>
   </body>
 </html>
+

@@ -1,0 +1,8 @@
+Anujith S Nayak
+Computer Science & Engineering Student
+Contact: nayakanujith27@gmail.com | 9606165951
+Location: Karkala
+
+Skills: Python, Java, C, SQL, HTML, CSS, Spring Boot, Git, Linux, DBMS, MS Office
+Projects: E-Sports Prediction, AI Guitar Chord Detector, Pharmacy Management System, Resume Builder
+Interests: AI, Machine Learning, Full Stack Development, Problem Solving, Creative Tech
